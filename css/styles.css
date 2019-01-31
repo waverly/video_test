@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,700");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  font-family: "Fira Sans Condensed", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100%;
+  opacity: 0;
+  transition: 0.5s all;
+}
+
+.fadein {
+  opacity: 1;
+  transition: 0.5s all;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: white;
+  opacity: 0.1;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-top: 1rem;
+}
+
+#video-container {
+  position: relative;
+  width: 100%;
+}
+
+#play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+#play-button svg {
+  width: 99%;
+}
+
+video {
+  width: 100%;
+}
+
+#video-one {
+  position: relative;
+  z-index: 1;
+}
+
+#video-two {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hide-video {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.display-none {
+  display: none;
+}
+
+.no-opacity {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  h1,
+  h2,
+  h3,
+  p {
+    opacity: 0.5;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  h1,
+  h2,
+  h3,
+  p {
+    display: none;
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <h1>THE LOOK</h1>
+    <div id="video-container">
+      <div id="play-button">
+        <svg
+          width="53"
+          height="53"
+          viewBox="0 0 53 53"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M41.4062 26.707L17.8047 38.5078V14.9063L41.4062 26.707Z"
+            fill="white"
+          />
+          <path
+            d="M52.5 26.5C52.5 40.8594 40.8594 52.5 26.5 52.5C12.1406 52.5 0.5 40.8594 0.5 26.5C0.5 12.1406 12.1406 0.5 26.5 0.5C40.8594 0.5 52.5 12.1406 52.5 26.5Z"
+            stroke="white"
+          />
+        </svg>
+      </div>
+      <video
+        muted="muted"
+        webkit-playsinline="true"
+        playsinline="true"
+        id="video-one"
+        src="video/looped_look_a.mp4"
+        preload="auto"
+      ></video>
+      <video
+        src="video/looped_look_b.mp4"
+        id="video-two"
+        class="hide-video"
+        muted="muted"
+        webkit-playsinline="true"
+        playsinline="true"
+        preload="auto"
+      ></video>
+    </div>
+    <p id="message"></p>
+    <p>Interactive prototype v0.01</p>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
